@@ -57,7 +57,7 @@ fn print_csv_line(line: &[String]) {
     println!(
         "{}",
         line.iter()
-            .map(|v| format!("\"{}\"", v.replace("\"", "\\\"")))
+            .map(|v| format!("\"{}\"", v.replace("\"", "\"\"")))
             .join(",")
     );
 }
